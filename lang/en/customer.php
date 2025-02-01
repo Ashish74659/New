@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'customer-list'=>'Customer List',
+    'customer-add'=>'Customer Add',
+    'customer-type'=>'Customer Type',
+    'phone-no'=>'Phone No',
+    'tax-no'=>'Tax No',
+    'assign-to'=>'Assign To',
+    'initial-balance'=>'Initial Balance',
+    'credit-limit'=>'Credit Limit',
+    'city'=>'City',
+    'state'=>'State',
+    'zipcode'=>'Zip Code',
+    'address1'=>'Address Line 1',
+    'address2'=>'Address Line 2',
+    'contact-information'=>'Contact Information',
+    'create-customer'=>'Create Customer',
+    'customer-general-details'=>'Customer General Details',
+    'customer-code'=>'Customer Code',
+    'post-box'=>'Post Box',
+    'first-name'=>'First Name',
+    'last-name'=>'Last Name',
+    'dob'=>'Date Of Birth',
+    'region'=>'Region',
+    'address'=>'Address',    
+    'customer-name'=>'Customer Name',
+];

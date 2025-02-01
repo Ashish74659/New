@@ -1,0 +1,117 @@
+.formsideright
+{
+ margin-right: 23px !important;
+}
+.form-group label
+{
+    font-size: 1.15rem !important;
+}
+.page-header {
+    margin-bottom: 0rem !important;
+}
+
+#sidebar {
+    width: 286px !important
+}
+textarea.form-control
+{
+    min-height: 8.45rem !important;
+}
+.input-text-width
+{
+    width: 96% !important;
+}
+
+.actiondiv
+{
+    top: 20px; padding-left: 5% !important;
+}
+
+.iconimage {
+    width: 35px;
+    margin: 3px;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #844fc1 !important;
+    border-color: #844fc1 !important;
+}
+.form-control {
+    background-color: #F5F8FA !important;
+    border: 1px solid #F5F8FA !important;
+    height: 3.45rem !important;
+}
+.button-right{
+    padding-left: 50px !important;
+}
+.sidebar .nav .nav-item .nav-link .menu-title
+{
+    font-size: 1.01rem !important;
+    font-weight: 600;
+    color: #844fc1 !important;
+}
+.sidebar .nav.sub-menu .nav-item .nav-link
+{
+    font-size: 1rem !important;
+}
+.card-body {
+    border-radius: 15px !important;
+    border: 0px !important;
+
+}
+.catheadline
+{
+    color:#000; 
+    font-weight: 600;
+    text-decoration: auto;
+}
+.tender-detailtext
+{
+    margin-top: 30px;
+    color: #B4B4B4;
+}
+.scetender{
+    background-color: #FBECFF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.tsbtender
+{
+    background-color: #F5F8FA;
+    padding: 10px;
+
+}
+.alert-dange-smg
+{
+    color: red;;
+
+}
+.icon-with-list{
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 0% !important;
+}
+.icon-with-list-a{
+text-decoration:none !important;
+}
+.white-space{
+    margin-top: 2%;
+}
+.actiondiv
+{
+    top: 20px; padding-left: 5% !important;
+}
+
+.actiondive
+{
+    top: 20px; padding-left: 17% !important;
+}
+textarea {
+    resize: none;
+ }
+.details{
+    color: #fff !important;
+    background-color: #844fc1 !important;
+    border-color: #844fc1 !important;
+}
