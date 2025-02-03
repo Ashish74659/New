@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@200&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* -----------------------JSB css-------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px;
+}
+.fdo-left {
+    width: 92%;
+    margin: auto;
+    /* height: 80vh; */
+    & img {
+        width: 100%;
+    }
+}
+.fdo-logo {
+    width: 55%;
+    & img {
+        width: 100%;
+    }
+}
+.navbar-nav .nav-item .nav-link {
+    color: #111 !important;
+}
+.fdo-right {
+    padding: 50px 80px 0px;
+}
+.log-btn {
+    border-radius: 100px;
+    padding: 6px 16px;
+    color: #fff;
+    background: #00a9e2;
+    border: 1px solid #00a9e2;
+}
+.log-btn:hover {
+    background: #367ab6;
+}
+.log-btn:disabled {
+    background-color: #aaa;
+    border: 1px solid #aaa;
+    color: #fff;
+}
+.can-btn {
+    width: 100%;
+    border-radius: 100px;
+    padding: 6px 16px;
+    color: #20427f;
+    background: transparent;
+    border: 1px solid #20427f;
+}
+.can-btn:hover {
+    background: #20427f;
+    color: #fff;
+}
+.heading {
+    color: #20427f;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.heading-app {
+    color: #20427f;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.font-size-12 {
+    font-size: 12px;
+}
+.font-size-13 {
+    font-size: 13px;
+}
+.font-size-14 {
+    font-size: 14px;
+}
+.font-size-15 {
+    font-size: 15px;
+}
+.font-size-16 {
+    font-size: 16px;
+}
+.text-color {
+    color: #00a9e2;
+    text-decoration: none;
+}
+.home-css {
+    width: 50px;
+    height: 50px;
+    background: #00a9e2;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    font-size: 1.3rem;
+    color: #c1e9ff;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+/* Login Page */
+.fd-input {
+    width: 100%;
+    border: 1px solid #00a9e2;
+    border-radius: 100px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.fd-input:focus {
+    border-color: #00a9e2;
+}
+.fd-input::placeholder {
+    font-size: 14px !important;
+}
+.inputWithIcon .fd-input {
+    padding-left: 40px;
+}
+
+.inputWithIcon .fd-input option,
+optgroup,
+select {
+    color: #454545;
+}
+.inputWithIcon {
+    position: relative;
+    margin-bottom: 10px;
+}
+.inputWithIcon .pos-left {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    transition: 0.3s;
+}
+.inputWithIcon .pos-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.inputWithIcon.inputIconBg .pos-left {
+    background-color: #aaa;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.sm-none {
+    display: flex;
+    align-items: center;
+}
+.footer-col {
+    background-color: #192b56;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+}
+#passwordMismatchMessage {
+    display: none;
+}
+#message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: absolute;
+    padding: 10px 20px;
+    margin-top: 10px;
+    z-index: 1;
+}
+#message h3 {
+    font-size: 16px;
+}
+
+#message p {
+    padding: 0px 35px;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+/* FDO Tender & RFI Related CSS */
+.banner-img {
+    width: 100%;
+    & img {
+        width: 100%;
+    }
+}
+.breadcrumb-item.active {
+    color: #fc8404 !important;
+}
+.bg-orange {
+    background: #fc8404;
+    border: 1px solid #fc8404;
+    color: #fff;
+    padding: 5px 10px;
+}
+.bor-box {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 6px 12px;
+}
+.list-card {
+    border: 1px solid #00a9e2;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+}
+.detail-card {
+    border: 1px solid #fc8404;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+}
+.btn-details {
+    position: absolute;
+    right: -15px;
+    top: 10px;
+}
+.tender-fees {
+    top: 35px;
+}
+.list-card:hover {
+    border: 1px solid #fdb714;
+}
+.list-card:hover .btn-details {
+    color: #fff;
+    background: #fdb714;
+    border: 1px solid #fdb714;
+}
+.tender-nav .nav-item .nav-link {
+    color: #00a9e2 !important;
+    font-size: 18px !important;
+}
+.tender-nav .nav-link.active,
+.tender-nav .show > .nav-link {
+    color: #fc8404 !important;
+    background: transparent !important;
+}
+.landing-tab .nav-item .nav-link {
+    color: #000 !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+.log-tab .nav-link.active,
+.tender-nav .show > .nav-link {
+    border-radius: 20px !important;
+    background: #20427f !important;
+    padding: 8px 30px !important;
+    color: #fff !important;
+    font-size: 18px !important;
+}
+.landing-tab .nav-item .nav-link.active {
+    background: transparent !important;
+    color: #0052b4 !important;
+    border-bottom: 2px solid !important;
+    border-radius: 0px !important;
+}
+.text-orange {
+    color: #fc8404;
+    font-size: 24px;
+}
+.text-orange::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    bottom: -5px;
+    background: #fc8404;
+    border: 1px solid #fc8404;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background: grey;
+}
+/* .fil-div{
+    border: 2px solid #00A9E2;
+    border-radius: 4px;
+} */
+.fil-head {
+    background: #00a9e2;
+}
+.fil-head::before {
+    content: "";
+    width: 4px;
+    height: 35px;
+    border: 1px solid #fc8404;
+    background: #fc8404;
+    position: absolute;
+    left: 13px;
+    top: 10px;
+}
+.detail-head::before {
+    content: "";
+    width: 4px;
+    height: 35px;
+    border: 1px solid #00a9e2;
+    background: #00a9e2;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.box-none {
+    box-shadow: none;
+}
+.click-show {
+    display: none;
+}
+.wit-border {
+    border: 0px !important;
+    outline: none !important;
+}
+.wit-border:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.wit-border::placeholder {
+    font-size: 14px !important;
+}
+
+.main-head {
+    font-size: 28px;
+    font-weight: 600;
+    position: absolute;
+    left: 68px;
+    right: 40px;
+    top: 87px;
+    color: #00a9e2;
+}
+
+.table-blue {
+    background: #192b56 !important;
+}
+.table-blue tr th {
+    background: #192b56 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+}
+.table-body tr td {
+    border: 1px solid #192b56 !important;
+    font-size: 12px !important;
+}
+.page-link {
+    border-radius: 4px !important;
+    color: #00a9e2 !important;
+}
+.page-link.active {
+    border: 1px solid #fc8404 !important;
+    background: #fc8404 !important;
+    color: #fff !important;
+}
+
+.page-link:hover {
+    background: #fc8404 !important;
+    color: #fff !important;
+}
+
+.ban-index {
+    width: 100%;
+
+    & img {
+        width: 100%;
+    }
+}
+.ban-head {
+    position: absolute;
+    top: 100px;
+    left: 115px;
+}
+.ban-head h5 {
+    font-size: 32px;
+    color: #0052b4;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    width: 100%;
+    font-size: 12px;
+    color: lightgrey;
+    background: #20427f;
+    text-align: center;
+    padding-top: 5px;
+    position: fixed;
+    bottom: 0;
+}
+
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.bg-tab-log {
+    background: #00a9e2;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.tab-pills .nav-item .nav-link {
+    color: #fff !important;
+    font-size: 18px !important;
+    padding: 8px 30px !important;
+}
+
+.multi-box {
+    width: 100%;
+}
+.multi-box i {
+    top: 12px !important;
+}
+.sd-multiSelect {
+    position: relative;
+}
+.sd-multiSelect .placeholder {
+    opacity: 1;
+    background-color: transparent;
+    cursor: pointer;
+    color: #757575;
+}
+.sd-multiSelect .ms-offscreen {
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.sd-multiSelect .sd-CustomSelect {
+    width: 100% !important;
+    color: #454545;
+}
+.sd-multiSelect .sd-CustomSelect::placeholder {
+    color: #00a9e2 !important;
+}
+
+.sd-multiSelect .ms-choice {
+    position: relative;
+    padding-left: 40px;
+    text-align: left !important;
+    width: 100%;
+    border: 1px solid #00a9e2;
+    border-radius: 100px;
+    background: #ffff;
+    box-shadow: none;
+    font-size: 15px;
+    height: 40px;
+    font-weight: 500;
+    color: #454545;
+    line-height: 1.5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.sd-multiSelect .ms-choice:after {
+    content: " ";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.sd-multiSelect .ms-choice:focus {
+    border-color: var(--theme-color);
+}
+
+.sd-multiSelect .ms-drop.bottom {
+    display: none;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.sd-multiSelect .ms-drop ul {
+    padding-left: 0px;
+    overflow-y: auto;
+}
+
+.sd-multiSelect .ms-drop li {
+    text-align: left;
+    list-style: none;
+    position: relative;
+}
+
+.sd-multiSelect .ms-drop li input[type="checkbox"] {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.sd-multiSelect .ms-drop li label {
+    cursor: pointer;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.sd-multiSelect .ms-drop li label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+        inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.sd-multiSelect .ms-drop li input:checked + span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: #00a9e2;
+    border-width: 0 2px 2px 0;
+}
+
+.verify-btn {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    border-radius: none;
+    background: transparent;
+    font-size: 14px;
+    color: #fc8404;
+}
+.otp-box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #fc8404;
+    border-radius: 12px;
+}
+.otp-box[type="text"]:focus,
+.otp-box[type="text"]:focus-visible {
+    border-color: #00a9e2;
+    /* border:1px solid #00A9E2; */
+}
+
+
+/*  5sep new css add by abhishek tyagi for auction page start  */
+
+
+
+.date-picker-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #00A9E2;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.date-input {
+   border: 1px solid #ccc;
+    padding: 0.1rem 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: 9.5rem;
+}
+
+.calendar-icon {
+    color: white;
+}
+
+.search-btn {
+    border-radius: 100px;
+    padding: 6px 16px;
+    color: #fff;
+    background: #00a9e2;
+    border: 1px solid #00a9e2;
+    line-height: 2;
+}
+
+/*  6sep new css add by abhishek tyagi for auction detail start  */
+
+
+.btn-bid {
+    background: #fc8404;
+    border: 1px solid #fc8404;
+    color: #fff;
+    padding: 5px 50px;
+}
+
+.btn-bid:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.home-sty{
+    position: absolute;
+    right: 80px;
+    top: 18px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        flex-wrap: nowrap !important;
+    }
+    .navbar .navbar-toggler {
+        background-color: grey !important;
+    }
+    .ban-index {
+        display: none;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        padding: 8px 15px !important;
+    }
+    .btn-details {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .fdo-left {
+        display: none;
+    }
+    .fdo-logo {
+        width: 55%;
+    }
+    .fdo-right {
+        padding: 80px 0px 0px;
+    }
+    .home-css {
+        top: -60px;
+        right: 25px;
+    }
+    .ban-head {
+        position: relative;
+        padding: 20px;
+        top: 0px;
+        left: 0px;
+    }
+    .ban-head h5 {
+        font-size: 32px;
+        color: #0052b4;
+        margin-bottom: 15px;
+    }
+}

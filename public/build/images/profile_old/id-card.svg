@@ -1,0 +1,9 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.21997 6.89957V16.0996C3.21997 17.1158 4.04377 17.9396 5.05997 17.9396H17.94C18.9562 17.9396 19.78 17.1158 19.78 16.0996V6.89957C19.78 5.88337 18.9562 5.05957 17.94 5.05957H5.05997C4.04377 5.05957 3.21997 5.88337 3.21997 6.89957Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.26 9.66016H17.02" stroke="black" stroke-width="0.766667" stroke-linecap="round"/>
+<path d="M14.26 12.4199H17.02" stroke="black" stroke-width="1.53333" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.58 9.66031C10.58 10.6765 9.75626 11.5003 8.74002 11.5003C7.72382 11.5003 6.90002 10.6765 6.90002 9.66031C6.90002 8.64411 7.72382 7.82031 8.74002 7.82031C9.22799 7.82031 9.696 8.01417 10.0411 8.35924C10.3862 8.7043 10.58 9.17232 10.58 9.66031Z" stroke="black" stroke-width="1.53333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.05994 15.1798C7.6203 12.2938 10.6278 13.2009 12.4199 15.1798" stroke="black" stroke-width="1.53333" stroke-linecap="round"/>
+<ellipse cx="8.81669" cy="9.96693" rx="1.91667" ry="1.53333" fill="#FDB714"/>
+<line x1="16.0101" y1="7.66641" x2="17.7245" y2="7.66641" stroke="#00A9E2" stroke-width="2.3"/>
+</svg>
