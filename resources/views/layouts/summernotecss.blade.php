@@ -1,0 +1,1 @@
+<link href="{{ URL::asset('build/libs/summernote/summernote-lite.min.css') }}" rel="stylesheet" type="text/css" />
