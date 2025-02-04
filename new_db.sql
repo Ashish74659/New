@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 04, 2025 at 06:55 AM
+-- Generation Time: Feb 04, 2025 at 07:27 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -44,6 +44,27 @@ CREATE TABLE `amy_countries` (
 
 INSERT INTO `amy_countries` (`encrypt_id`, `id`, `name`, `code_1`, `code_2`, `status`, `created_at`, `updated_at`) VALUES
 ('eyJpdiI6IktlUWQrcHJjRENuQlNXNG1VTzcyaUE9PSIsInZhbH', 1, 'Oman', 'OM', 'OMN', 'Active', '2023-12-01 09:37:10', '2023-12-01 09:37:10');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `company`
+--
+
+CREATE TABLE `company` (
+  `encrypt_id` varchar(255) DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `code` varchar(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `status` enum('Active','Inactive','Blocked') NOT NULL,
+  `created_at` timestamp(6) NULL DEFAULT NULL,
+  `updated_at` timestamp(6) NULL DEFAULT NULL,
+  `time_zone_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `date_formate_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `time_formate` enum('12','24') NOT NULL DEFAULT '12',
+  `currency_id` bigint(20) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -289,6 +310,13 @@ CREATE TABLE `last_login` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `last_login`
+--
+
+INSERT INTO `last_login` (`encrypt_id`, `id`, `login_time`, `user_id`, `created_at`, `updated_at`) VALUES
+(NULL, 100, '2025-02-04 06:20:57', 2, '2025-02-04 06:20:57', '2025-02-04 06:20:57');
+
 -- --------------------------------------------------------
 
 --
@@ -439,6 +467,23 @@ INSERT INTO `modeofpayment` (`encrypt_id`, `id`, `name`, `code`, `status`, `crea
 (NULL, 1, 'Cash', 'Cash', 'Active', NULL, NULL),
 (NULL, 2, 'Card', 'Card', 'Active', NULL, NULL),
 (NULL, 3, 'Online', 'Online', 'Active', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notifications`
+--
+
+CREATE TABLE `notifications` (
+  `id` char(36) NOT NULL,
+  `type` varchar(191) NOT NULL,
+  `notifiable_type` varchar(191) NOT NULL,
+  `notifiable_id` bigint(20) UNSIGNED NOT NULL,
+  `data` text NOT NULL,
+  `read_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -953,6 +998,45 @@ INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (659, 14),
 (660, 1),
 (660, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `systemadminsetup`
+--
+
+CREATE TABLE `systemadminsetup` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `otptime` varchar(100) DEFAULT NULL,
+  `otp_enable` tinyint(1) DEFAULT NULL,
+  `two_fa_enable_employee` enum('Yes','No') NOT NULL DEFAULT 'Yes',
+  `numbertime` varchar(100) DEFAULT NULL,
+  `workflow_type` enum('Consolidated','Company Wise') NOT NULL DEFAULT 'Consolidated',
+  `numbersequence_type` enum('Consolidated','Company Wise') NOT NULL DEFAULT 'Consolidated',
+  `number_enable` tinyint(1) DEFAULT NULL,
+  `registration` tinyint(1) DEFAULT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `mailSetting` tinyint(1) DEFAULT NULL,
+  `host` varchar(100) DEFAULT NULL,
+  `port` varchar(100) DEFAULT NULL,
+  `username` varchar(100) DEFAULT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  `encryption` varchar(100) DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `default_currency_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `status` enum('Approved','Rejected') DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `auto_release_time` int(11) DEFAULT NULL,
+  `auto_release_enable` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `systemadminsetup`
+--
+
+INSERT INTO `systemadminsetup` (`id`, `otptime`, `otp_enable`, `two_fa_enable_employee`, `numbertime`, `workflow_type`, `numbersequence_type`, `number_enable`, `registration`, `user_id`, `mailSetting`, `host`, `port`, `username`, `password`, `encryption`, `address`, `default_currency_id`, `status`, `created_at`, `updated_at`, `auto_release_time`, `auto_release_enable`) VALUES
+(1, '60', NULL, 'Yes', '3', 'Company Wise', 'Company Wise', 1, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 11, NULL, NULL, '2024-11-26 10:54:34', 3, 0);
 
 -- --------------------------------------------------------
 
@@ -1571,6 +1655,12 @@ ALTER TABLE `amy_countries`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `company`
+--
+ALTER TABLE `company`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `currency`
 --
 ALTER TABLE `currency`
@@ -1700,6 +1790,12 @@ ALTER TABLE `role_has_permissions`
   ADD KEY `role_has_permissions_role_id_foreign` (`role_id`);
 
 --
+-- Indexes for table `systemadminsetup`
+--
+ALTER TABLE `systemadminsetup`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tax`
 --
 ALTER TABLE `tax`
@@ -1752,6 +1848,12 @@ ALTER TABLE `user_company`
 --
 ALTER TABLE `amy_countries`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `company`
+--
+ALTER TABLE `company`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `currency`
@@ -1811,7 +1913,7 @@ ALTER TABLE `images`
 -- AUTO_INCREMENT for table `last_login`
 --
 ALTER TABLE `last_login`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -1854,6 +1956,12 @@ ALTER TABLE `personal_access_tokens`
 --
 ALTER TABLE `roles`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+
+--
+-- AUTO_INCREMENT for table `systemadminsetup`
+--
+ALTER TABLE `systemadminsetup`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tax`
