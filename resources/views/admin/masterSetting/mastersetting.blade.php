@@ -111,17 +111,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                             <div class="col-lg-4">
-                                                <div class="card bg-master text-white">
-                                                    <div class="card-body">
-                                                        <a href="{{ route('item-list') }}" class="setup-detail">
-                                                            <p class="card-text">{{ __('item.item') }}
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                             
 
                                             <div class="col-lg-4">
                                                 <div class="card bg-master text-white">

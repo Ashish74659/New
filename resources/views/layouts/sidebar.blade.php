@@ -60,8 +60,7 @@
             <ul class="metismenu list-unstyled" id="side-menu">
                 <li class="menu-title">Settings</li>
                 <li><a href="{{ route('company-list') }}"> <i class="ri-settings-2-lineo"> </i><span>Company Settings</span></a> </li>
-                <li><a href="{{ route('item-list') }}"> <i class="ri-settings-2-line"> </i><span>Item</span></a>                    
-                <li><a href="{{ route('document-view-page',['m'=>base64_encode(convert_uuencode('Item'))]) }}"> <i class="ri-settings-2-line"> </i><span>Item Image</span></a>
+                 <li><a href="{{ route('document-view-page',['m'=>base64_encode(convert_uuencode('Item'))]) }}"> <i class="ri-settings-2-line"> </i><span>Item Image</span></a>
                 <li><a href="{{ route('document-view-page',['m'=>base64_encode(convert_uuencode('Category'))]) }}"> <i class="ri-settings-2-line"> </i><span>Category Image</span></a>
                 <li><a href="{{ route('document-view-page',['m'=>base64_encode(convert_uuencode('User'))]) }}"> <i class="ri-settings-2-line"> </i><span>User Image</span></a>
                 </li>
@@ -74,9 +73,7 @@
                             Order</span></a>
                 </li>                
 
-                <li><a href="{{ route('modifier-list') }}"> <i class="ri-settings-2-line">
-                        </i><span>{{ __('item.add-on') }}</span></a>
-                </li>
+                
             </ul>
 
 

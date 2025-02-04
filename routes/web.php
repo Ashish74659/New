@@ -238,5 +238,4 @@ require __DIR__.'/auth.php';
 require __DIR__.'/email.php';
 require __DIR__.'/company.php';
 require __DIR__.'/common.php';
-require __DIR__.'/customer.php';
-require __DIR__.'/item.php';
+require __DIR__.'/customer.php'; 
